@@ -69,7 +69,6 @@ const EN = {
 
     "exp.label": "Experience",
     "exp.title": "Professional experience",
-    "exp.current": "2026 — Present",
     "exp.job1.title": "Technology / Data Analysis Intern",
     "exp.job1.p1": `Data analysis and data matching, development of
         Python scripts and automations, including web scraping projects.`,
@@ -84,17 +83,14 @@ const EN = {
     "exp.job2.p2": `Lead management, contract closing and support for legal
         and administrative routines.`,
 
-    "exp.past": "Previous experience",
     "exp.past1.title": "Administrative Assistant",
-    "exp.past1.time": "8 months",
     "exp.past1.desc": `Customer service, document organization, spreadsheets
-        and contracts, reconciliations, financial control and invoicing.`,
+        and contracts, reconciliations, financial control, invoicing and
+        support for administrative routines.`,
     "exp.past2.title": "Operations Assistant",
-    "exp.past2.time": "10 months",
     "exp.past2.desc": `Customer service and sales, order processing, document
         organization, inventory control and operational support.`,
     "exp.past3.title": "Young Apprentice",
-    "exp.past3.time": "2 years",
     "exp.past3.desc": `Checking and organizing documents and contracts,
         timesheet control and support for administrative and internal
         communication routines.`,

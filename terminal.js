@@ -194,24 +194,31 @@
 
         experiencia: {
             run() {
-                const now = tr("2026 — atual", "2026 — present");
-                print([
-                    `${span("t-green", "●")} ${span("t-bold", tr("Estagiária de Tecnologia / Análise de Dados", "Technology / Data Analysis Intern"))}`,
-                    `  ${span("t-primary", "Brasil 61")}  ${span("t-muted", "· " + now)}`,
-                    "  " + tr("Análise e cruzamento de dados, automações em Python,", "Data analysis and matching, Python automation,"),
-                    "  " + tr("web scraping e relatórios em R para clientes.", "web scraping and R reports for clients."),
-                    `  ${span("t-accent", "Python · R · RStudio · SQL · Power BI · Excel")}`,
-                    "",
-                    `${span("t-green", "●")} ${span("t-bold", tr("Assistente de Atendimento e Jurídico", "Customer Service & Legal Assistant"))}`,
-                    `  ${span("t-primary", tr("Escritório de Advocacia", "Law Firm"))}  ${span("t-muted", "· " + now)}`,
-                    "  " + tr("Triagem de clientes (trabalhista e previdenciário),", "Client screening (labor and social security law),"),
-                    "  " + tr("sínteses de casos, gestão de leads e contratos.", "case summaries, lead management and contracts."),
-                    "",
-                    span("t-muted", tr("Experiências anteriores:", "Previous experience:")),
-                    `${span("t-muted", "○")} ${tr("Assistente Administrativa", "Administrative Assistant")} ${span("t-muted", "— Arina Estela Advocacia · " + tr("8 meses", "8 months"))}`,
-                    `${span("t-muted", "○")} ${tr("Assistente Operacional", "Operations Assistant")} ${span("t-muted", "— Espaço Bedrock Garden · " + tr("10 meses", "10 months"))}`,
-                    `${span("t-muted", "○")} ${tr("Jovem Aprendiz", "Young Apprentice")} ${span("t-muted", "— Casa de Ismael · " + tr("2 anos", "2 years"))}`,
-                ], { stagger: 25 });
+                // todas as experiências no mesmo formato, sem datas
+                const jobs = [
+                    [tr("Estagiária de Tecnologia / Análise de Dados", "Technology / Data Analysis Intern"), "Brasil 61",
+                        tr("Análise e cruzamento de dados, automações em Python, web scraping e relatórios em R.", "Data analysis and matching, Python automation, web scraping and R reports.")],
+                    [tr("Assistente de Atendimento e Jurídico", "Customer Service & Legal Assistant"), tr("Escritório de Advocacia", "Law Firm"),
+                        tr("Triagem de clientes, sínteses de casos, gestão de leads e contratos.", "Client screening, case summaries, lead management and contracts.")],
+                    [tr("Assistente Administrativa", "Administrative Assistant"), "Arina Estela Advocacia",
+                        tr("Documentos, planilhas, contratos e controle financeiro.", "Documents, spreadsheets, contracts and financial control.")],
+                    [tr("Assistente Operacional", "Operations Assistant"), "Espaço Bedrock Garden",
+                        tr("Atendimento, vendas, pedidos e controle de estoque.", "Customer service, sales, orders and inventory control.")],
+                    [tr("Jovem Aprendiz", "Young Apprentice"), "Casa de Ismael",
+                        tr("Conferência de documentos e contratos e rotinas administrativas.", "Document and contract checks and administrative routines.")],
+                ];
+
+                const lines = [];
+                jobs.forEach(([title, company, desc], i) => {
+                    if (i) lines.push("");
+                    lines.push(
+                        `${span("t-green", "●")} ${span("t-bold", title)}`,
+                        `  ${span("t-primary", company)}`,
+                        `  ${span("t-muted", desc)}`,
+                    );
+                });
+
+                print(lines, { stagger: 25 });
             },
         },
 

@@ -647,7 +647,16 @@ document.addEventListener("pointermove", (event) => {
 
         grid.innerHTML = repos.map((repo) => {
             const color = LANG_COLORS[repo.language] || "var(--primary)";
-            const site = repo.homepage
+
+            // o repositório deste próprio site ganha nome e descrição amigáveis
+            const isThisSite = repo.name.toLowerCase() === `${SITE.github}.github.io`.toLowerCase();
+            const title = isThisSite ? tr("Este portfólio", "This portfolio") : prettyName(repo.name);
+            const description = isThisSite
+                ? tr("O código deste site: HTML, CSS e JavaScript puro, com terminal interativo e versão PT/EN.",
+                     "This site's source code: plain HTML, CSS and JavaScript, with an interactive terminal and PT/EN versions.")
+                : repo.description || tr("Sem descrição ainda.", "No description yet.");
+
+            const site = repo.homepage && !isThisSite
                 ? `<a href="${escapeHtml(repo.homepage)}" target="_blank" rel="noopener noreferrer">${tr("Ver site", "Live site")} ↗</a>`
                 : "";
 
@@ -657,8 +666,8 @@ document.addEventListener("pointermove", (event) => {
                         <svg class="icon repo-folder" aria-hidden="true"><use href="#i-folder"/></svg>
                         ${repo.language ? `<span class="repo-lang"><i style="background:${color}"></i>${escapeHtml(repo.language)}</span>` : ""}
                     </div>
-                    <h4>${escapeHtml(prettyName(repo.name))}</h4>
-                    <p>${repo.description ? escapeHtml(repo.description) : tr("Sem descrição ainda.", "No description yet.")}</p>
+                    <h4>${escapeHtml(title)}</h4>
+                    <p>${escapeHtml(description)}</p>
                     <div class="repo-footer">
                         <span class="repo-date">${tr("Atualizado em", "Updated")} ${dateFormat.format(new Date(repo.pushed_at))}</span>
                         <span class="repo-links">
