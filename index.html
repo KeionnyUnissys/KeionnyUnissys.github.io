@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Portfólio de Kêionny Unissys, estudante de Análise e Desenvolvimento de Sistemas com experiência em dados, Python, SQL e automação."
+    >
+
+    <meta name="theme-color" content="#080c14">
+
+    <!-- Pré-visualização ao compartilhar o link (LinkedIn, WhatsApp...) -->
+    <meta property="og:title" content="Kêionny Unissys | Portfólio">
+    <meta property="og:description" content="Tecnologia, dados e desenvolvimento: Python, SQL, R e automação.">
+    <meta property="og:type" content="website">
+
+    <title>Kêionny Unissys | Portfólio</title>
+
+    <!-- avisa o CSS que o JavaScript está ativo (evita "piscar" as animações) -->
+    <script>document.documentElement.classList.add("js");</script>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23080c14'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='800' font-size='28' fill='%23f1f5f9'>KU<tspan fill='%23a78bfa'>.</tspan></text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+
+<body>
+
+    <!-- Ícones usados no site (desenhados uma vez, reaproveitados com <use>) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-github" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+        </symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3.5 20.5l1.3-4.3A8.6 8.6 0 1 1 8 19.3l-4.5 1.2z"/>
+            <path fill="currentColor" d="M9.2 7.6c.2-.4.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .6.3.5.9 1.3 1.6 1.9.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.2.4.4 0 .3 0 1-.5 1.6-.5.5-1.4.9-2 .9-.7 0-1.6-.2-3.2-1-2-1-3.4-3-3.9-3.8-.4-.7-.9-1.9-.9-2.8 0-1 .5-1.7.9-2z"/>
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/>
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 6h18v12H3z M3 7l9 6 9-6"/>
+        </symbol>
+        <symbol id="i-folder" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2.5h8.5A1.5 1.5 0 0 1 21 9v9.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/>
+        </symbol>
+    </svg>
+
+    <!-- Fundo interativo (rede de dados que reage ao mouse) -->
+    <canvas id="background" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <a href="#inicio" class="skip-link" data-i18n="skip">Pular para o conteúdo</a>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="scroll-progress" aria-hidden="true"></div>
+
+        <div class="container header-content">
+
+            <a href="#inicio" class="logo">
+                KU<span>.</span>
+            </a>
+
+            <nav class="navigation" id="menu" aria-label="Navegação principal" data-i18n-aria="nav.label">
+                <ul>
+                    <li><a href="#inicio" data-i18n="nav.inicio">Início</a></li>
+                    <li><a href="#sobre" data-i18n="nav.sobre">Sobre</a></li>
+                    <li><a href="#experiencia" data-i18n="nav.experiencia">Experiência</a></li>
+                    <li><a href="#tecnologias" data-i18n="nav.tecnologias">Tecnologias</a></li>
+                    <li><a href="#projetos" data-i18n="nav.projetos">Projetos</a></li>
+                    <li><a href="#contato" data-i18n="nav.contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button
+                    type="button"
+                    class="lang-toggle"
+                    aria-label="Mudar idioma para inglês"
+                    data-i18n-aria="lang.aria"
+                >
+                    <span data-lang="pt">PT</span>
+                    <span data-lang="en">EN</span>
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menu"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Início -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="status-badge reveal">
+                        <span class="status-dot"></span>
+                        <span data-i18n="hero.status">Aberta a novas oportunidades</span>
+                    </p>
+
+                    <p class="hero-label reveal" data-i18n="hero.hello">Olá! eu sou a</p>
+
+                    <h1 class="reveal">
+                        <span class="gradient-text">Kêionny Unissys</span>
+                    </h1>
+
+                    <h2 class="reveal">
+                        <span data-i18n="hero.role">Estudante de ADS</span>
+                        <span class="hero-typed">& <span class="typed"
+                            data-words="Tecnologia e Dados|Python e Automação|Análise de Dados|Web Scraping|Desenvolvimento Web"
+                            data-words-en="Technology and Data|Python and Automation|Data Analysis|Web Scraping|Web Development"
+                        >Tecnologia e Dados</span><span class="caret" aria-hidden="true"></span></span>
+                    </h2>
+
+                    <p class="hero-description reveal" data-i18n="hero.desc">
+                        Desenvolvo soluções com foco em dados e automação,
+                        utilizando tecnologias como Python, SQL e R.
+                        Atualmente curso Análise e Desenvolvimento de Sistemas
+                        e sigo ampliando meus conhecimentos em desenvolvimento
+                        de software.
+                    </p>
+
+                    <div class="hero-buttons reveal">
+                        <a href="#projetos" class="button button-primary magnetic">
+                            <span data-i18n="hero.cta">Ver projetos</span>
+                            <span class="button-arrow" aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="#" class="button button-secondary magnetic" data-link="resume" download hidden>
+                            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                            <span data-i18n="btn.resume">Baixar currículo</span>
+                        </a>
+
+                        <a
+                            href="https://linkedin.com/in/keionnyunissys"
+                            class="button button-icon magnetic"
+                            data-link="linkedin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                            title="LinkedIn"
+                        >
+                            <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                        </a>
+
+                        <a
+                            href="https://github.com/KeionnyUnissys"
+                            class="button button-icon magnetic"
+                            data-link="github"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            title="GitHub"
+                        >
+                            <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-code reveal">
+                    <div class="code-window tilt">
+
+                        <div class="code-header">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <p class="code-filename" aria-hidden="true">developer.py</p>
+                            <button type="button" class="code-run" data-open-terminal data-run="python developer.py">
+                                ▶ <span data-i18n="code.run">Executar no terminal</span>
+                            </button>
+                        </div>
+
+                        <pre aria-hidden="true"><code id="code-typing"><span class="code-purple">class</span> <span class="code-blue">Developer</span>:
+
+    <span class="code-purple">def</span> <span class="code-blue">__init__</span>(self):
+        self.name = <span class="code-green">"Kêionny"</span>
+        self.area = <span class="code-green" data-i18n="code.area">"Tecnologia"</span>
+
+        self.skills = [
+            <span class="code-green">"Python"</span>,
+            <span class="code-green">"SQL"</span>,
+            <span class="code-green">"R"</span>,
+            <span class="code-green" data-i18n="code.data">"Dados"</span>
+        ]
+
+    <span class="code-purple">def</span> <span class="code-blue">learn</span>(self):
+        <span class="code-purple">return</span> <span class="code-green" data-i18n="code.learn">"Sempre evoluindo"</span></code></pre>
+
+                        <div class="code-output" aria-hidden="true">
+                            <div class="code-output-inner">
+                                <span class="code-prompt">&gt;&gt;&gt;</span> Developer().learn()
+                                <br>
+                                <span class="code-green" data-i18n="code.learnOut">'Sempre evoluindo'</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#sobre" class="scroll-hint" aria-label="Rolar para a seção Sobre" data-i18n-aria="hero.scroll">
+                <span></span>
+            </a>
+        </section>
+
+
+        <!-- Sobre -->
+        <section id="sobre" class="section">
+            <div class="container">
+
+                <p class="section-label reveal" data-i18n="about.label">Sobre mim</p>
+
+                <h2 class="section-title reveal" data-i18n="about.title">
+                    Tecnologia, dados e desenvolvimento.
+                </h2>
+
+                <div class="about-grid">
+
+                    <div class="about-text reveal" data-i18n="about.text">
+                        <p>
+                            Sou estudante de Análise e Desenvolvimento de
+                            Sistemas e atualmente atuo na área de tecnologia
+                            e análise de dados.
+                        </p>
+
+                        <p>
+                            Tenho experiência prática com análise e cruzamento
+                            de dados, desenvolvimento de scripts e automações,
+                            web scraping e criação de relatórios para
+                            apresentação de resultados.
+                        </p>
+
+                        <p>
+                            Também tenho vivência em atendimento e suporte
+                            jurídico, análise documental e organização de
+                            informações. Meu perfil é analítico, organizado
+                            e orientado à resolução de problemas.
+                        </p>
+
+                        <p>
+                            Meu objetivo é continuar desenvolvendo uma base
+                            sólida em programação e engenharia de software,
+                            transformando conhecimento técnico em projetos
+                            reais.
+                        </p>
+                    </div>
+
+                    <div class="about-info">
+
+                        <article class="info-card spotlight reveal" data-i18n="about.card1">
+                            <span>Formação</span>
+                            <strong>Análise e Desenvolvimento de Sistemas</strong>
+                            <p>Senac — Cursando</p>
+                        </article>
+
+                        <article class="info-card spotlight reveal" data-i18n="about.card2">
+                            <span>Localização</span>
+                            <strong>Brasília — DF</strong>
+                            <p>Brasil</p>
+                        </article>
+
+                        <article class="info-card spotlight reveal" data-i18n="about.card3">
+                            <span>Foco atual</span>
+                            <strong>Desenvolvimento & Dados</strong>
+                            <p>Aprendizado contínuo e projetos práticos</p>
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Experiência -->
+        <section id="experiencia" class="section section-dark">
+            <div class="container">
+
+                <p class="section-label reveal" data-i18n="exp.label">Experiência</p>
+
+                <h2 class="section-title reveal" data-i18n="exp.title">
+                    Experiência profissional
+                </h2>
+
+                <div class="timeline">
+                    <div class="timeline-line" aria-hidden="true">
+                        <div class="timeline-fill"></div>
+                    </div>
+
+                    <article class="experience-card spotlight reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+
+                        <div class="experience-header">
+                            <div>
+                                <h3 data-i18n="exp.job1.title">Estagiária de Tecnologia / Análise de Dados</h3>
+                                <p>Brasil 61</p>
+                            </div>
+
+                            <span data-i18n="exp.current">2026 — Atual</span>
+                        </div>
+
+                        <p data-i18n="exp.job1.p1">
+                            Atuação com análise e cruzamento de dados,
+                            desenvolvimento de scripts e automações em Python,
+                            incluindo projetos de web scraping.
+                        </p>
+
+                        <p data-i18n="exp.job1.p2">
+                            Desenvolvimento de relatórios de dados em R (RStudio)
+                            para apresentação de resultados a clientes e uso
+                            de SQL, Power BI, Excel e PowerPoint no tratamento,
+                            análise e apresentação de informações.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>R</span>
+                            <span>RStudio</span>
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                            <span>Web Scraping</span>
+                        </div>
+
+                    </article>
+
+                    <article class="experience-card spotlight reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+
+                        <div class="experience-header">
+                            <div>
+                                <h3 data-i18n="exp.job2.title">Assistente de Atendimento e Jurídico</h3>
+                                <p data-i18n="exp.job2.company">Escritório de Advocacia</p>
+                            </div>
+
+                            <span data-i18n="exp.current">2026 — Atual</span>
+                        </div>
+
+                        <p data-i18n="exp.job2.p1">
+                            Atendimento e triagem de clientes nas áreas
+                            trabalhista e previdenciária, análise e organização
+                            de documentos, elaboração de sínteses de casos e
+                            acompanhamento de clientes.
+                        </p>
+
+                        <p data-i18n="exp.job2.p2">
+                            Gestão de leads, fechamento de contratos e suporte
+                            às rotinas jurídicas e administrativas.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <!-- Experiências anteriores (formato compacto) -->
+                <h3 class="past-title reveal" data-i18n="exp.past">Experiências anteriores</h3>
+
+                <div class="past-grid">
+
+                    <article class="past-card spotlight reveal">
+                        <div class="past-header">
+                            <h4 data-i18n="exp.past1.title">Assistente Administrativa</h4>
+                            <span data-i18n="exp.past1.time">8 meses</span>
+                        </div>
+                        <p class="past-company">Arina Estela Advocacia</p>
+                        <p data-i18n="exp.past1.desc">
+                            Atendimento ao cliente, organização de documentos,
+                            elaboração de planilhas e contratos, conciliações,
+                            controle financeiro e emissão de notas fiscais.
+                        </p>
+                    </article>
+
+                    <article class="past-card spotlight reveal">
+                        <div class="past-header">
+                            <h4 data-i18n="exp.past2.title">Assistente Operacional</h4>
+                            <span data-i18n="exp.past2.time">10 meses</span>
+                        </div>
+                        <p class="past-company">Espaço Bedrock Garden</p>
+                        <p data-i18n="exp.past2.desc">
+                            Atendimento ao cliente e vendas, formalização de
+                            pedidos, organização documental, controle de estoque
+                            e apoio às atividades operacionais.
+                        </p>
+                    </article>
+
+                    <article class="past-card spotlight reveal">
+                        <div class="past-header">
+                            <h4 data-i18n="exp.past3.title">Jovem Aprendiz</h4>
+                            <span data-i18n="exp.past3.time">2 anos</span>
+                        </div>
+                        <p class="past-company">Casa de Ismael</p>
+                        <p data-i18n="exp.past3.desc">
+                            Organização e conferência de documentos e contratos,
+                            controle de folhas de ponto e apoio às rotinas
+                            administrativas e de comunicação interna.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Tecnologias -->
+        <section id="tecnologias" class="section">
+            <div class="container">
+
+                <p class="section-label reveal" data-i18n="skills.label">Conhecimentos</p>
+
+                <h2 class="section-title reveal" data-i18n="skills.title">
+                    Tecnologias e ferramentas
+                </h2>
+
+                <p class="section-description reveal" data-i18n="skills.desc">
+                    Tecnologias utilizadas nos estudos, projetos e
+                    experiências profissionais.
+                </p>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card spotlight tilt reveal">
+                        <span>01</span>
+                        <h3>Python</h3>
+                        <p data-i18n="skills.python">
+                            Scripts, automações, análise de dados
+                            e web scraping.
+                        </p>
+                    </article>
+
+                    <article class="skill-card spotlight tilt reveal">
+                        <span>02</span>
+                        <h3>SQL</h3>
+                        <p data-i18n="skills.sql">
+                            Consulta, organização e análise
+                            de dados.
+                        </p>
+                    </article>
+
+                    <article class="skill-card spotlight tilt reveal">
+                        <span>03</span>
+                        <h3>R & RStudio</h3>
+                        <p data-i18n="skills.r">
+                            Análise de dados e desenvolvimento
+                            de relatórios.
+                        </p>
+                    </article>
+
+                    <article class="skill-card spotlight tilt reveal">
+                        <span>04</span>
+                        <h3>Power BI</h3>
+                        <p data-i18n="skills.pbi">
+                            Visualização e apresentação
+                            de informações.
+                        </p>
+                    </article>
+
+                    <article class="skill-card spotlight tilt reveal">
+                        <span>05</span>
+                        <h3>Excel & PowerPoint</h3>
+                        <p data-i18n="skills.office">
+                            Planilhas, tratamento de dados e
+                            apresentação de resultados.
+                        </p>
+                    </article>
+
+                    <article class="skill-card spotlight tilt reveal">
+                        <span>06</span>
+                        <h3 data-i18n="skills.auto.title">Automação de processos</h3>
+                        <p data-i18n="skills.auto">
+                            Scripts que automatizam rotinas
+                            repetitivas e ganham tempo.
+                        </p>
+                    </article>
+
+                    <article class="skill-card spotlight tilt reveal">
+                        <span>07</span>
+                        <h3>Git & GitHub</h3>
+                        <p data-i18n="skills.git">
+                            Versionamento e organização
+                            de projetos.
+                        </p>
+                    </article>
+
+                    <article class="skill-card spotlight tilt reveal">
+                        <span>08</span>
+                        <h3 data-i18n="skills.ai.title">Inteligência Artificial</h3>
+                        <p data-i18n="skills.ai">
+                            Uso de ferramentas de IA para apoiar
+                            programação, análise e automação.
+                        </p>
+                    </article>
+
+                    <article class="skill-card learning spotlight tilt reveal">
+                        <span data-i18n="skills.web.tag">09 · aprendendo</span>
+                        <h3 data-i18n="skills.web.title">Desenvolvimento Web</h3>
+                        <p data-i18n="skills.web">
+                            Aprimorando conhecimentos em HTML,
+                            CSS e desenvolvimento de aplicações.
+                        </p>
+                    </article>
+
+                </div>
+
+                <!-- Faixa infinita com as ferramentas -->
+                <div class="marquee" aria-hidden="true">
+                    <div class="marquee-track">
+                        <span>Python</span><span>SQL</span><span>R</span><span>RStudio</span><span>Power BI</span><span>Excel</span><span>PowerPoint</span><span>Git</span><span>GitHub</span><span>Web Scraping</span><span>HTML</span><span>CSS</span><span>PostgreSQL</span><span>IA</span>
+                        <span>Python</span><span>SQL</span><span>R</span><span>RStudio</span><span>Power BI</span><span>Excel</span><span>PowerPoint</span><span>Git</span><span>GitHub</span><span>Web Scraping</span><span>HTML</span><span>CSS</span><span>PostgreSQL</span><span>IA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projetos -->
+        <section id="projetos" class="section section-dark">
+            <div class="container">
+
+                <p class="section-label reveal" data-i18n="proj.label">Portfólio</p>
+
+                <h2 class="section-title reveal" data-i18n="proj.title">
+                    Projetos
+                </h2>
+
+                <p class="section-description reveal" data-i18n="proj.desc">
+                    Esta área será construída conforme novos projetos
+                    forem desenvolvidos e documentados.
+                </p>
+
+                <div class="projects-grid">
+
+                    <article class="project-card spotlight reveal">
+                        <div class="project-number">01</div>
+
+                        <div>
+                            <p class="project-type"><span class="status-dot"></span> <span data-i18n="proj.p1.type">EM DESENVOLVIMENTO</span></p>
+
+                            <h3 data-i18n="proj.p1.title">Portfólio pessoal</h3>
+
+                            <p data-i18n="proj.p1.desc">
+                                Desenvolvimento deste portfólio como projeto
+                                prático para consolidar conhecimentos em
+                                HTML, CSS, JavaScript, responsividade,
+                                acessibilidade e organização de código.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Canvas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-placeholder spotlight reveal">
+
+                        <div class="project-number">02</div>
+
+                        <div>
+                            <p class="project-type" data-i18n="proj.p2.type">PRÓXIMO PROJETO</p>
+
+                            <h3 data-i18n="proj.p2.title">Em breve</h3>
+
+                            <p data-i18n="proj.p2.desc">
+                                Novos projetos serão adicionados com
+                                documentação, código-fonte e descrição
+                                das decisões técnicas.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- Repositórios puxados automaticamente do GitHub -->
+                <div class="github-block reveal">
+                    <div class="github-header">
+                        <div>
+                            <h3 data-i18n="gh.title">Direto do GitHub</h3>
+                            <p data-i18n="gh.sub">Repositórios públicos, atualizados automaticamente.</p>
+                        </div>
+
+                        <a
+                            href="https://github.com/KeionnyUnissys"
+                            class="button button-secondary magnetic"
+                            data-link="github"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                            <span data-i18n="gh.profile">Ver perfil no GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="repo-grid" id="repo-grid" aria-live="polite">
+                        <div class="repo-skeleton"></div>
+                        <div class="repo-skeleton"></div>
+                        <div class="repo-skeleton"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contato -->
+        <section id="contato" class="contact">
+            <div class="container contact-content">
+
+                <p class="section-label reveal" data-i18n="contact.label">Contato</p>
+
+                <h2 class="reveal" data-i18n="contact.title">
+                    Vamos <span class="gradient-text">conversar?</span>
+                </h2>
+
+                <p class="reveal" data-i18n="contact.desc">
+                    Estou construindo minha trajetória em tecnologia
+                    e estou aberta a conexões, aprendizado e novas
+                    oportunidades profissionais.
+                </p>
+
+                <div class="contact-links reveal">
+
+                    <a href="#" class="button button-whatsapp magnetic" data-link="whatsapp" target="_blank" rel="noopener noreferrer" hidden>
+                        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                        WhatsApp
+                    </a>
+
+                    <a
+                        href="mailto:keionnyunissys@hotmail.com"
+                        class="button button-primary magnetic"
+                        data-link="email"
+                    >
+                        <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                        <span data-i18n="contact.email">Enviar e-mail</span>
+                    </a>
+
+                    <a
+                        href="https://linkedin.com/in/keionnyunissys"
+                        class="button button-secondary magnetic"
+                        data-link="linkedin"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                        LinkedIn
+                    </a>
+
+                    <a
+                        href="https://github.com/KeionnyUnissys"
+                        class="button button-secondary magnetic"
+                        data-link="github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                        GitHub
+                    </a>
+
+                </div>
+
+                <a href="#" class="resume-link reveal" data-link="resume" download hidden>
+                    <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                    <span data-i18n="btn.resumePdf">Baixar currículo em PDF</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>
+                © <span id="year">2026</span> · <span data-i18n="footer.made">Desenvolvido por Kêionny Unissys.</span>
+            </p>
+            <p class="footer-hint" data-i18n="footer.hint">
+                Dica: clique no fundo da página ou aperte <kbd>Ctrl</kbd> + <kbd>K</kbd> 😉
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante que abre o terminal -->
+    <button type="button" class="terminal-launcher" data-open-terminal aria-label="Abrir terminal interativo" data-i18n-aria="term.open">
+        <span class="terminal-launcher-icon" aria-hidden="true">&gt;_</span>
+        <span class="terminal-launcher-text">Terminal</span>
+        <kbd class="terminal-launcher-kbd" aria-hidden="true">Ctrl K</kbd>
+    </button>
+
+    <!-- Terminal interativo -->
+    <div class="terminal" id="terminal" hidden>
+        <div class="terminal-backdrop" data-close-terminal></div>
+
+        <div
+            class="terminal-window"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="terminal-title"
+        >
+            <div class="terminal-header">
+                <button type="button" class="terminal-dot red" data-close-terminal aria-label="Fechar terminal" data-i18n-aria="term.close"></button>
+                <span class="terminal-dot yellow" aria-hidden="true"></span>
+                <span class="terminal-dot green" aria-hidden="true"></span>
+
+                <p class="terminal-title" id="terminal-title" data-i18n="term.title">visitante@keionny: ~</p>
+
+                <button type="button" class="terminal-close" data-close-terminal aria-label="Fechar terminal" data-i18n-aria="term.close">Esc</button>
+            </div>
+
+            <div class="terminal-body" id="terminal-body">
+                <div class="terminal-output" id="terminal-output" aria-live="polite"></div>
+
+                <form class="terminal-line" id="terminal-form" autocomplete="off">
+                    <label for="terminal-input" class="terminal-prompt" data-i18n="term.prompt">visitante@keionny:<span>~</span>$</label>
+                    <input
+                        id="terminal-input"
+                        class="terminal-input"
+                        type="text"
+                        spellcheck="false"
+                        autocapitalize="off"
+                        autocorrect="off"
+                        enterkeyhint="send"
+                        aria-label="Digite um comando"
+                        data-i18n-aria="term.input"
+                    >
+                </form>
+            </div>
+
+            <!-- atalhos clicáveis (montados pelo terminal.js no idioma atual) -->
+            <div class="terminal-chips" id="terminal-chips"></div>
+        </div>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+
+    <script src="config.js?v=5"></script>
+    <script src="i18n.js?v=5"></script>
+    <script src="script.js?v=5"></script>
+    <script src="terminal.js?v=5"></script>
+</body>
+</html>
